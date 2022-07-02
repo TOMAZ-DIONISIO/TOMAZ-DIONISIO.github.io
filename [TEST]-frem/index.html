@@ -16,11 +16,17 @@
         //     ]
         // };
         // user.friends[0].color 
-        let profile = document.querySelector("#profile");
+        const profile = document.querySelector("#profile");
         function replaceImg(event) {
-            event.target.src = "../IMAGES/WhatsApp Image 2022-03-30 at 1.04.59 AM.PNG"
-        };
-        profile.onclick = replaceImg;
+            if (event.target.src.endsWith("IDENTIFICATION.PNG")) {
+                event.target.src = "../IMAGES/REUBEN.PNG";
+            } else if (event.target.src.endsWith("REUBEN.PNG")) {
+                event.target.src = "../IMAGES/BEIA.PNG";
+            } else {
+                event.target.src = "../IMAGES/IDENTIFICATION.PNG";
+            }
+        }
+        profile.addEventListener('click', replaceImg);
     </script>
 </body>
 </html>
