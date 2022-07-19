@@ -1,0 +1,102 @@
+.div {
+    width: 128px;
+    height: 128px;
+    size: 100%;
+    margin: 64px;
+    background-size: 64px 64px;
+    background-image:
+    linear-gradient(
+        45deg,
+        lightgrey 25%,
+        transparent 25%
+        ),
+    linear-gradient(
+        315deg,
+        lightgrey 25%,
+        transparent 25%
+    ),
+    linear-gradient(
+        45deg,
+        transparent 75%,
+        lightgrey 75%
+    ),
+    linear-gradient(
+        315deg,
+        transparent 75%,
+        lightgrey 75%
+    );
+    animation-name: slide;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+@keyframes slide {
+    0%{ background-position: 0px 0px;}
+    50%{background-position: 64px 32px;}
+    100%{ background-position: 128px 64px;}
+}
+
+/* ------------------------------------------------- */
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.butt {
+    display: grid;
+    GRID-TEMPLATE-COLUMNS: REPEAT(4, 512PX);
+    GRID-TEMPLATE-ROWS: REPEAT(2, 512px);
+    column-gap: 64px;
+    row-gap: 64PX;
+    padding: 64px;
+    background-image: 
+        repeating-linear-gradient(
+            90deg,
+            whitesmoke 0 32px,
+            transparent 32px 64px
+        );
+        animation-name: slide2;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: none;
+        animation-play-state: running;
+}
+    
+@keyframes slide2 {
+    0%{ background-position: 0px 0px;}
+    100%{ background-position: 64px 0px;}
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-position: 50% 50%;
+    object-fit: cover;
+}
+
+.profile{
+    height: 256px;
+    width: 256px;
+    padding: 64px;
+}
+
+.thingie {
+    background-color: #FFBC00;
+}
+
+.thingie:hover {
+    filter: invert(1);
+}

@@ -8,4 +8,4 @@
     - text
     - bar element
     - stuffs
-4. click picture to show new one
+4. click picture to show new one DONE

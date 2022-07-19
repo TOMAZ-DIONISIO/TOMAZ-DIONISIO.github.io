@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-</head>
-<body>
-    <img id="profile" src="../IMAGES/IDENTIFICATION.PNG" alt="coco">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="STYLE-TEST.CSS">
+    </head>
+    <body>
 
-    <script>
-        // JSON - JavaScript Object Notation
-        // let user = {
-        //     color: "red",
-        //     friends: [
-        //         {color: "black", friends: []},
-        //         {color: "royal", friends: []}
-        //     ]
-        // };
-        // user.friends[0].color 
-        const profile = document.querySelector("#profile");
-        function replaceImg(event) {
-            if (event.target.src.endsWith("IDENTIFICATION.PNG")) {
-                event.target.src = "../IMAGES/REUBEN.PNG";
-            } else if (event.target.src.endsWith("REUBEN.PNG")) {
-                event.target.src = "../IMAGES/BEIA.PNG";
-            } else {
-                event.target.src = "../IMAGES/IDENTIFICATION.PNG";
-            }
-        }
-        profile.addEventListener('click', replaceImg);
-    </script>
-</body>
+        <div class="profile">
+            <img id="profile" src="../IMAGES/IDENTIFICATION.PNG" alt="">
+            <script src="SCRIPT-TEST.JS"></script>
+        </div>
+
+        <div class="butt">
+            <A class="LINK">
+                <img class="thingie" src="../IMAGES/DIP-8.GIF" alt="">
+            </A>
+            <img class="thingie" src="../IMAGES/FILM-PITCH-5-BLUE.GIF" alt="">
+            <img class="thingie" src="../IMAGES/LED-3MM-GREEN.GIF" alt="">
+            <img class="thingie" src="" alt="">
+            <img class="thingie" src="" alt="">
+            <img class="thingie" src="" alt="">
+            <img class="thingie" src="" alt="">
+            <img class="thingie" src="" alt="">
+        </div>
+        <div class="div">
+        </div>
+    </body>
 </html>
